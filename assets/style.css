@@ -1,0 +1,104 @@
+
+body {
+    color: #ffe81f;
+    background-color: black;
+    background-image: url(img/Screenshot_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    margin: 20px auto;
+}
+
+header img {
+    width: 20%;
+    height: 20%;
+}
+main {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+section {
+    display: flex;
+
+}
+
+.left {
+    position: relative;
+    width: 8%;
+    text-align: right;
+    border-right: 2px solid grey;
+    margin-right: 20px;
+}
+
+.left h2 {
+    margin: auto 20px;
+    font-size: 0.75rem;
+}
+
+.left span {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.right {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    gap: 20px;
+}
+
+.card {
+    line-height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    padding: 2vh 2vw;
+    flex-grow: 1;
+    
+}
+
+#popular .card {
+    border: 2px solid red;
+}
+
+#popular .card:hover {
+    box-shadow: 0 0 10px red;
+}
+
+#secondary .card {
+    border: 2px solid greenyellow;
+}
+
+#secondary .card:hover {
+    box-shadow: 0 0 10px greenyellow;
+}
+
+#others .card {
+    border: 2px solid turquoise;
+}
+
+#others .card:hover {
+    box-shadow: 0 0 10px turquoise;
+}
+
+@media (min-width:768px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media (min-width:1200px) {
+    .card {
+        width: 30%;
+    }
+}
